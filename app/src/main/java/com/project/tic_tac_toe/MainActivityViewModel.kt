@@ -1,11 +1,11 @@
-package me.jacoblewis.tic_tac_toe
+package com.project.tic_tac_toe
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import me.jacoblewis.tic_tac_toe.models.Board
-import me.jacoblewis.tic_tac_toe.models.BoardState
-import me.jacoblewis.tic_tac_toe.models.Cell
-import me.jacoblewis.tic_tac_toe.models.CellState
+import com.project.tic_tac_toe.models.Board
+import com.project.tic_tac_toe.models.BoardState
+import com.project.tic_tac_toe.models.Cell
+import com.project.tic_tac_toe.models.CellState
 
 class MainActivityViewModel : ViewModel() {
     val mainBoard = Board()

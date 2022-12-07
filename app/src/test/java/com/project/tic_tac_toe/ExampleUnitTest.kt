@@ -1,4 +1,4 @@
-package me.jacoblewis.tic_tac_toe
+package com.project.tic_tac_toe
 
 import org.junit.Test
 

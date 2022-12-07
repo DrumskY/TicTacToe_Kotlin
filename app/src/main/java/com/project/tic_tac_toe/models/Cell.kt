@@ -1,4 +1,4 @@
-package me.jacoblewis.tic_tac_toe.models
+package com.project.tic_tac_toe.models
 
 enum class Cell {
     TOP_LEFT,

@@ -10,7 +10,7 @@ android {
         viewBinding true
     }
     defaultConfig {
-        applicationId "me.jacoblewis.tic_tac_toe"
+        applicationId "com.project.tic_tac_toe"
         minSdkVersion 26
         targetSdkVersion 30
         versionCode 1

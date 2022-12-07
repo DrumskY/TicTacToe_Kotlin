@@ -1,4 +1,4 @@
-package me.jacoblewis.tic_tac_toe.models
+package com.project.tic_tac_toe.models
 
 data class Board(private val board: MutableMap<Cell, CellState> = mutableMapOf()) {
 

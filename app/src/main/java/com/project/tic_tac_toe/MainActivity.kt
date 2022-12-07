@@ -1,14 +1,14 @@
-package me.jacoblewis.tic_tac_toe
+package com.project.tic_tac_toe
 
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import me.jacoblewis.tic_tac_toe.databinding.ActivityMainBinding
-import me.jacoblewis.tic_tac_toe.models.Board
-import me.jacoblewis.tic_tac_toe.models.BoardState
-import me.jacoblewis.tic_tac_toe.models.Cell
+import com.project.tic_tac_toe.databinding.ActivityMainBinding
+import com.project.tic_tac_toe.models.Board
+import com.project.tic_tac_toe.models.BoardState
+import com.project.tic_tac_toe.models.Cell
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         when (board.boardState) {
             BoardState.STAR_WON -> {
                 setupBoard(true)
-                showWinningMessage("Stars Won!")
+                showWinningMessage("Cross Won!")
             }
             BoardState.CIRCLE_WON -> {
                 setupBoard(true)
