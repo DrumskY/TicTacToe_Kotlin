@@ -1,0 +1,8 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.project.tic_tac_toe.models/CellState.Blank///PointingToDeclaration/com/project/tic_tac_toe/models/CellState.Blank.html
+$dokka.location:com.project.tic_tac_toe.models/CellState.Circle///PointingToDeclaration/com/project/tic_tac_toe/models/CellState.Circle.html
+$dokka.location:com.project.tic_tac_toe.models/CellState.Star///PointingToDeclaration/com/project/tic_tac_toe/models/CellState.Star.html
+com.project.tic_tac_toe
+com.project.tic_tac_toe.models
+
