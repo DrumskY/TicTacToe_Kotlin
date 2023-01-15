@@ -24,7 +24,7 @@ class MainActivityViewModel : ViewModel() {
         }
     }
 
-    private fun aiTurn() {
+    fun aiTurn() {
         val circleWinningCell = mainBoard.findNextWinningMove(CellState.Circle)
         val startWinningCell = mainBoard.findNextWinningMove(CellState.Star)
         when {
