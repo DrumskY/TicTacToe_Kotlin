@@ -58,14 +58,13 @@ class TicTacToeUnitTest {
         println("expected null when board is empty")
     }
 
+
     @Test
     fun winningConfigurationReturnsCorrectCell() {
         // Create a new Board object
-        val board = mutableMapOf<Cell, CellState>()
         val viewModel = Board()
-
-        board[Cell.TOP_LEFT] = CellState.Star
-        board[Cell.TOP_CENTER] = CellState.Star
+        viewModel.setCell(Cell.TOP_LEFT, CellState.Star)
+        viewModel.setCell(Cell.TOP_CENTER, CellState.Star)
         val state = CellState.Star
 
         // Assert that the returned cell is the winning move for the provided state
@@ -111,6 +110,9 @@ class TicTacToeUnitTest {
         assertEquals(mainActivityViewModel.board.value?.topLeft, CellState.Star)
     }
 
+
+
+
     @Test
     fun testAiTurn() {
         val viewModel = MainActivityViewModel()
@@ -124,4 +126,6 @@ class TicTacToeUnitTest {
         val actual = board.findNextWinningMove(CellState.Star)
         assertEquals(expected, actual)
     }
+
+
 }

@@ -2,6 +2,7 @@ package com.project.tic_tac_toe.models
 
 data class Board(private val board: MutableMap<Cell, CellState> = mutableMapOf()) {
 
+
     val topLeft: CellState
         get() = board[Cell.TOP_LEFT] ?: CellState.Blank
     val topCenter: CellState
@@ -21,6 +22,7 @@ data class Board(private val board: MutableMap<Cell, CellState> = mutableMapOf()
     val bottomRight: CellState
         get() = board[Cell.BOTTOM_RIGHT] ?: CellState.Blank
 
+
     /**
      * Set the cell state
      *
@@ -37,6 +39,11 @@ data class Board(private val board: MutableMap<Cell, CellState> = mutableMapOf()
         board[cell] = state
         return true
     }
+
+
+//    fun getCell(cell: Cell) : CellState {
+//        return cells[cell.ordinal]
+//    }
 
     /**
      * Clear the board of all states
